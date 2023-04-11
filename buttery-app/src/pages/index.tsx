@@ -7,25 +7,31 @@ import { serverSearch } from '@/config/config.index'
 import MovieSearched from '@/components/MovieSearched'
 
 
-export default function Home({movies} : {movies:any}) {
-  console.log(movies);
+export default function Home(/*{movies} : {movies:any}*/) {
+  /*console.log(movies);*/
 
   return (
-    <>
-      <Hero/>
-      <Navbar/>
-      <main>
+    <div className="bg-slate-100 dark:bg-slate-900 w-full overflow-hidden App">
+      <div>
+        <Navbar/>
+      </div>
+      <div>
+        <Hero/>
+      </div>
+      <main className='text-xl'>
         <div>
-          <h1>The value of customKey is: {process.env.APIKey}</h1>
-          <h2>List of Movies</h2>
+          {/*
+          <h2>List of Movies:</h2>
           <MovieSearched movies={movies.Search}/>
+          */}
         </div>
 
         
       </main>
-    </>
+    </div>
   )
 }
+/*
 var userInput = "Godfather Part";
 var searchPrompt = userInput.replace(/ /g,"%20");
 
@@ -46,3 +52,4 @@ export async function getStaticProps() {
     props: { movies }
   }
 }
+*/

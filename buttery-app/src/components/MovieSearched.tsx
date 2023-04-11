@@ -6,7 +6,7 @@ type Props = {}
 const MovieSearched = ({movies} : any) => {
   return (
     <div>
-        {movies.map((movie: any) => <MovieCard movie={movie} key={movie.imdbID}/>)}
+        {movies?.map((movie: any) => <MovieCard movie={movie} key={movie.imdbID}/>)}
     </div>
   )
 }

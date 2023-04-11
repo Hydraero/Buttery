@@ -1,17 +1,19 @@
+import { Input } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
+import Search from './Search'
 
 type Props = {}
 
 const Hero = (props: Props) => {
   return (
     <div>
-        <h1>Hero</h1>
         <Link href="/movies">
             <button>
                 Goto Movies
             </button>
         </Link>
+        <Search/>
     </div>
   )
 }
