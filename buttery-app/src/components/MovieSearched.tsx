@@ -1,3 +1,4 @@
+import { Box, Container, Flex, HStack } from '@chakra-ui/react'
 import React from 'react'
 import MovieCard from './MovieCard'
 
@@ -5,8 +6,12 @@ type Props = {}
 
 const MovieSearched = ({movies} : any) => {
   return (
-    <div className='my-10 flex flex-row space-x-5 justify-center items-center'>
-        {movies?.map((movie: any) => <MovieCard movie={movie} key={movie.imdbID}/>)}
+    <div className='h-100% flex flex-row gap-10 overflow-x-auto no-scrollbar'>
+        {movies?.map((movie: any) => (
+          <div className='p-10'>
+            <MovieCard className='' movie={movie} key={movie.imdbID}/>
+          </div>
+        ))}
     </div>
   )
 }

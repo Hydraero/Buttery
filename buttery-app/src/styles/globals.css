@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.card-container: hover .overlay{
+    opacity: 1;
+}

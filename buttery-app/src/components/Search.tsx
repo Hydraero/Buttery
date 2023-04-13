@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import MovieSearched from './MovieSearched';
 
 import { serverSearch } from '@/config/config.index'
+import AddBookmark from './AddBookmark';
 
 const options = {
 method: 'GET',
@@ -40,14 +41,16 @@ const Search = (props: Props) => {
     };
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className='bg-rose-600'>
+            <form className='px-32' onSubmit={handleSubmit}>
                 <Input type='text' placeholder='Search for a Movie' size='lg' value={searchTerm} onChange={handleSearch}/>
-                <Button type="submit">Search</Button>
-                Searched Term: "{searchTerm}"
+                {/*<Button type="submit">Search</Button>*/}
             </form>
-            <h2>List of Movies:</h2>
-            <MovieSearched movies={movieItems}/>
+
+            <div className='py-5 px-10'>
+                <MovieSearched movies={movieItems} className=''/>
+            </div>
+            
         </div>
     )
 }
