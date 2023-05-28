@@ -6,6 +6,12 @@ import Search from './Search'
 type Props = {}
 
 const Hero = (props: Props) => {
+  const [favorites, setFavorites]: any = React.useState([]);
+  const addFavoriteMovie = (movie: any) =>{
+    const newFavoriteList = [...favorites, movie];
+    setFavorites(newFavoriteList);
+  }
+
   return (
     <div className='pt-32 hero'>
         {/*

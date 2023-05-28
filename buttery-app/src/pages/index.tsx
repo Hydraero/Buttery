@@ -5,17 +5,16 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import { serverSearch } from '@/config/config.index'
 import MovieSearched from '@/components/MovieSearched'
-
+import React from 'react'
 
 export default function Home() {
-
   return (
     <div className="">
       <div>
-        <Navbar/>
+        <Navbar />
       </div>
       <main className='text-xl bg-rose-600 h-screen'>
-        <Hero/>
+        <Hero />
       </main>
     </div>
   )

@@ -4,8 +4,10 @@ type Props = {}
 
 const AddBookmark = (props: Props) => {
   return (
-    <div>AddBookmark</div>
+    <>
+        <span className='text-white'>Add to Favorites</span>
+    </>
   )
 }
 
-export default AddBookmark
+export default AddBookmark;

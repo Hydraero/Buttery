@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 
 .no-scrollbar::-webkit-scrollbar {
     display: none;
