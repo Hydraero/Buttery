@@ -43,7 +43,7 @@ const Search = (props: Props) => {
     return (
         <div className='bg-rose-600'>
             <form className='px-32' onSubmit={handleSubmit} >
-                <Input variant='filled' className='' type='text' placeholder='Search for a Movie' size='lg' value={searchTerm} onChange={handleSearch}/>
+                <Input focusBorderColor='black' variant='filled' className='' type='text' placeholder='Search for a Movie' size='lg' value={searchTerm} onChange={handleSearch}/>
                 {/*<Button type="submit">Search</Button>*/}
             </form>
 
