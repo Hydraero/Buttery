@@ -5,7 +5,7 @@ type Props = {}
 const AddBookmark = (props: Props) => {
   return (
     <>
-        <span className='text-white'>Add to Favorites</span>
+        <span className='text-white'></span>
     </>
   )
 }
